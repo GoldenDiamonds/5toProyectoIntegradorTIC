@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café Tatiaxca</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<script src="js/jquery.js"></script>
+<script src="_assets/js/index.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!--Inicio de page principal-->
+	<div data-role ="page" id="inicio" data-add-back-btn= true>
+
+		<div data-role="header" class="nav-glyphish-example" data-theme="b" id="nav">
+			<h4 style="text-align:center;">Café Tatiaxca</h4>
+			<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+		    <ul>
+			      <li><a href="#inicio" id="inicio" data-icon="home" data-transition="slide">INICIO</a></li>
+						<li><a href="#productos" id="productos" data-icon="shop" data-transition="slide">PRODUCTOS</a></li>
+		        <li><a href="#ubicacion" id="ubicacion" data-icon="location" data-transition="slide">UBICACIÓN</a></li>
+						<li><a href="#quienes_somos" id="acerca_de" data-icon="info" data-transition="slide">ACERCA DE</a></li>
+						<li>
+
+						<a href="#popupLogin" id="login" data-rel="popup" data-position-to="window"
+						data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+
+							<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+							    <form>
+							        <div style="padding:10px 20px;">
+							            <h3>INICIO DE SESIÓN</h3>
+							            <label for="user" class="ui-hidden-accessible">Username:</label>
+							            <input name="user" id="user" value="" placeholder="usuario" data-theme="a" type="text">
+							            <label for="pass" class="ui-hidden-accessible">Password:</label>
+							            <input name="pass" id="pass" value="" placeholder="contraseña" data-theme="a" type="password">
+							            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+														Entrar
+													</button>
+													¿No tienes cuenta?
+													<br>
+													<a href="../registro.php">Registrarse</a>
+							        </div>
+							    </form>
+							</div>
+						</li>
+		    </ul>
+		  </div>
+		</div>
+		<!--Inicio de Content-->
+		<div data-role="content"></div>
+
+	<div data-role="tabs">
+		<ul data-role="listview" data-inset="true" class="tablist-left">
+	    
+	    </ul>
+		<ul id="two" class="tablist-content" data-role="listview" data-inset="true">
+			<li>
+				<a href="#quienes_somos" data-transition="slide">
+					<img src="img/elm1.png">
+					<h3>Cafe de calidad artesanal</h3>
+					<p>
+						Diferentes presentaciones...
+					</p>
+				</a>
+			</li>
+			<li><a href="#elemento2" data-transition="slide">
+				<img src="elm2.png">
+				<h3>Cosecha y cultivo natural</h3>
+				<p>
+					Sin fertlizantes artificiales ni pesticidas...
+				</p>
+			</a>
+		</li>
+	    <li>
+				<a href="#elemento3" data-transition="slide">
+					<img src="elm3.png">
+					<h3>Mano de obra mexicana</h3>
+					<p>
+						Favorece a la economía regional...
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+			<!--Footer de page principal-->
+			<div data-role="footer" data-theme="c">
+				<center>
+				Empresas XYZ &copy; 2017 <br> Todos los derechos reservados
+			</center>
+			</div>
+		</div>
+<!--Fin de page principal-->
+
+
+<!--Sección de quienes somos-->
+	<div data-role="page" id="quienes_somos">
+		<!--
+		<div data-role ="navbar" data-iconpos="left">
+			<a href="#navegacion" data-transition="flip" data-icon="bars">
+				Navegacion
+			</a>
+		</div>
+	-->
+		<div data-role="header" class="nav-glyphish-example" data-theme="b" id="nav">
+			<h4 style="text-align:center;">Café Tatiaxca</h4>
+			<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+				<ul>
+					<li><a href="#inicio" id="inicio2" data-icon="home" data-transition="slide">INICIO</a></li>
+					<li><a href="#productos" id="productos2" data-icon="shop" data-transition="slide">PRODUCTOS</a></li>
+					<li><a href="#ubicacion" id="ubicacion2" data-icon="location" data-transition="slide">UBICACIÓN</a></li>
+					<li><a href="#quienes_somos" id="acerca_de2" data-icon="info" data-transition="slide">ACERCA DE</a></li>
+						<!--<li><a href="#" id="coffee" data-icon="custom">INICIAR SESIÓN</a></li>-->
+						<li>
+
+						<a href="#popupLogin2" id="login2" data-rel="popup" data-position-to="window"
+						data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+
+							<div data-role="popup" id="popupLogin2" data-theme="a" class="ui-corner-all">
+									<form>
+											<div style="padding:10px 20px;">
+													<h3>INICIO DE SESIÓN</h3>
+													<label for="user2" class="ui-hidden-accessible">Username:</label>
+													<input name="user2" id="user2" value="" placeholder="usuario" data-theme="a" type="text">
+													<label for="pass2" class="ui-hidden-accessible">Password:</label>
+													<input name="pass2" id="pass2" value="" placeholder="contraseña" data-theme="a" type="password">
+													<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+														Entrar
+													</button>
+													¿No tienes cuenta?
+													<br>
+													<a href="../registro.php">Registrarse</a>
+											</div>
+									</form>
+							</div>
+						</li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="content">
+			<p>
+				<h2><strong>Acerca de</strong></h2>
+				En <strong>Café Tatiaxca</strong> Somos una empresa mexicana, enfocados
+				en la producción artesanal de café en
+				la ciudad de Zongolica, con distintas sucursales a lo
+				largo del bello estado de Veracruz, te esperamos en tu
+				franquicia más cercana.
+			</p>
+		</div>
+		<div data-role="footer" data-theme="c">
+			<center>
+			Empresas XYZ &copy; 2017 <br> Todos los derechos reservados
+		</center>
+		</div>
+	</div>
+<!--Fin de sección de quienes somos-->
+
+
+
+<!--Inicio de seccion "ubicación"-->
+
+		<div data-role="page" id="ubicacion">
+			<!--
+			<div data-role ="navbar" data-iconpos="left">
+				<a href="#navegacion" data-transition="flip" data-icon="bars">
+					Navegacion
+				</a>
+			</div>-->
+			<div data-role="header" class="nav-glyphish-example" data-theme="b" id="nav">
+				<h4 style="text-align:center;">Café Tatiaxca</h4>
+				<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+			    <ul>
+						<li><a href="#inicio" id="inicio3" data-icon="home" data-transition="slide">INICIO</a></li>
+						<li><a href="#productos" id="productos3" data-icon="shop" data-transition="slide">PRODUCTOS</a></li>
+						<li><a href="#ubicacion" id="ubicacion3" data-icon="location" data-transition="slide">UBICACIÓN</a></li>
+						<li><a href="#quienes_somos" id="acerca_de3" data-icon="info" data-transition="slide">ACERCA DE</a></li>
+			        <!--<li><a href="#" id="coffee" data-icon="custom">INICIAR SESIÓN</a></li>-->
+							<li>
+
+							<a href="#popupLogin3" id="login3" data-rel="popup" data-position-to="window"
+							data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+
+								<div data-role="popup" id="popupLogin3" data-theme="a" class="ui-corner-all">
+								    <form>
+								        <div style="padding:10px 20px;">
+								            <h3>INICIO DE SESIÓN</h3>
+								            <label for="user3" class="ui-hidden-accessible">Username:</label>
+								            <input name="user3" id="user3" value="" placeholder="usuario" data-theme="a" type="text">
+								            <label for="pass3" class="ui-hidden-accessible">Password:</label>
+								            <input name="pass3" id="pass3" value="" placeholder="contraseña" data-theme="a" type="password">
+								            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+															Entrar
+														</button>
+														¿No tienes cuenta?
+														<br>
+														<a href="../registro.php">Registrarse</a>
+								        </div>
+								    </form>
+								</div>
+							</li>
+			    </ul>
+			  </div>
+			</div>
+				<!--
+				<a href="#inicio" data-transition="turn" data-icon="back">
+					Atras
+				</a>
+			-->
+
+			<div data-role="content">
+				<h2><strong>Ubicación</strong></h2>
+				<p>
+					<!--P: Implementar mapas de google para ubicación de empresa-->
+					Nos encontramos ubicados en la <strong>Ciudad de Maltrata, Ver junto al palacio municipal</strong>
+					<br> <br>
+					<center>
+					<img src="https://maps.googleapis.com/maps/api/staticmap?center=18.8100965,-97.2778356&zoom=18&size=400x480
+					&path=weight:3%7Ccolor:blue%7Cenc:{coaHnetiVjM??_SkM??~R&markers=color:green|label:C|18.8101786,-97.2778949&key=AIzaSyDorHzOUJ4-m7DOmecB2LhnXuVmyeDcZd8"/>
+					</center>
+				</p>
+			</div>
+
+		<div data-role="footer" data-theme="c">
+			<center>
+			Empresas XYZ &copy; 2017 <br> Todos los derechos reservados
+		</center>
+		</div>
+	</div>
+<!--Fin de sección de ubicación-->
+
+<!--Inicio de Barra de navegación
+	<div data-role="page" id="navegacion">
+		<div data-role="header" data-theme="b">
+			<h1>Café Tatiaxca</h1>
+		</div>
+		<div data-role="content">
+			<h2>Barra de Navegacion</h2>
+			<h3>Seleccione una opción</h3>
+			<div data-role="tabs">
+				<ul data-role="listview" data-inset="true" class="tablist-left">
+			    
+			  </ul>
+				<ul id="two" class="tablist-content" data-role="listview" data-inset="true">
+					<li><a href="#inicio" data-transition="flip">Inicio </a></li>
+					<li><a href="#quienes_somos" data-ajax="false" data-transition="flip">¿Quienes somos?</a></li>
+			    	<li><a href="#ubicacion" data-ajax="false">Ubicación</a></li>
+					<li><a href="#contacto" data-ajax="false">Contacto</a></li>
+					<li><a href="#solicitar_job" data-ajax="false">Solicitar empleo</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="c">
+			<center>
+			Empresas XYZ &copy; 2017 <br> Todos los derechos reservados
+		</center>
+		</div>
+	</div>
+Fin de Barra de Navegación-->
+
+</body>
+</html>
